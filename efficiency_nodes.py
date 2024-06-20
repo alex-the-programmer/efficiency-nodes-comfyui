@@ -304,7 +304,7 @@ class TSC_LoRA_Stacker:
         }
 
         for i in range(1, 50):
-            inputs["required"][f"lora_name_{i}"] = ("STRING", {"default": "None"}),
+            inputs["required"][f"lora_name_{i}"] = ("STRING", {"default": "None"})
             inputs["required"][f"lora_wt_{i}"] = ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.01})
             inputs["required"][f"model_str_{i}"] = ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.01})
             inputs["required"][f"clip_str_{i}"] = ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.01})
